@@ -268,7 +268,7 @@
     },
     "adventuring_time": {
         "name": "Adventuring Time",
-        "requirements": [ "follow_ender_eye" ]
+        "requirements": [ "follow_ender_eye", "explore_nether" ]
     },
     "play_jukebox_in_meadows": {
         "name": "Sound of Music",

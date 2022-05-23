@@ -1,6 +1,7 @@
 var advancements;
 $.getJSON('./json/advancements.json', function(data) {
     advancements = data;
+    console.log(advancements);
 })
 
 function getAdvancement(achieved, available, seed) {

@@ -182,7 +182,7 @@ li .name {
 }
 
 .empty {
-    height: 150px;
+    height: 300px;
 }
 
 @media (max-width: 660px) {
@@ -205,5 +205,18 @@ li .name {
         left: 15px;
 
         top: calc(50% + 25px);
+    }
+
+    .current button {
+        position: absolute;
+        margin-top: 145px;
+    }
+
+    .gaveup button {
+        display: none;
+    }
+
+    .won button {
+        display: none;
     }
 }

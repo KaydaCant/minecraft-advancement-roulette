@@ -87,7 +87,7 @@ li {
     font-size: 22px;
 }
 
-li p {
+li .name {
     position: absolute;
     margin-left: 20px;
     vertical-align: center;
@@ -99,11 +99,11 @@ li p {
     background-color: #444444;
 }
 
-.current p {
+.current .name {
     color: #FFFFFF;
 }
 
-.future p {
+.future .name {
     color: #595959;
 }
 
@@ -144,6 +144,24 @@ li p {
 
 .gaveup .quit {
     background-color: #990000;
+    cursor: default;
+}
+
+.won {
+    background-color: #43FF8E;
+}
+
+.won .name {
+    color: 181818;
+}
+
+.won .next {
+    background-color: #40BD72;
+    cursor: default;
+}
+
+.won .quit {
+    background-color: #40BD72;
     cursor: default;
 }
 

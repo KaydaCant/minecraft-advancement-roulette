@@ -4,13 +4,20 @@ $(".advancements").hide();
 var advancementData;
 var current = 0;
 var quit = false;
+var finished = false;
 
 
 
 
+function win() {
+    finished = true;
+    $(".current").addClass("won");
+}
 
 function next() {
     if (quit) return;
+    if (finished) return;
+    if (current >= advancementData.list.length) return win();
     $(".current").removeClass("current");
     $(".advancements").append(`<li class="current"><p class="name">${advancementData.list[current].name}</p></li>`);
 
@@ -22,6 +29,7 @@ function next() {
 
 function giveUp() {
     if (quit) return;
+    if (finished) return;
     quit = true;
     $(".current").addClass("gaveup");
     for (i = 0; i < advancementData.list.length - current; i++) {

@@ -82,7 +82,7 @@
     },
     "obtain_crying_obsidian": {
         "name": "Who is Cutting Onions?",
-        "requirements": []
+        "requirements": [ "enter_the_nether", [ "distract_piglin", "find_bastion" ] ]
     },
     "distract_piglin": {
         "name": "Oh Shiny",

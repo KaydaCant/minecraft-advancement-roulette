@@ -33,7 +33,7 @@ function generate() {
     quit = false;
     $(".advancements").empty();
 
-    advancementData = getList($(".seed").val());
+    advancementData = getList($(".generatorSeed").val());
     current = 0;
 
     $(".advancements").append(`<button onclick="next()" class="next">Next</button>`);

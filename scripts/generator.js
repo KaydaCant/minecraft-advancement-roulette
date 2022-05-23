@@ -1,7 +1,6 @@
 var advancements;
 $.getJSON('./json/advancements.json', function(data) {
     advancements = data;
-    console.log(advancements);
 })
 
 function getAdvancement(achieved, available, seed) {
@@ -9,7 +8,8 @@ function getAdvancement(achieved, available, seed) {
     var searchLength = searching.length;
     searchLoop:
     for (i = 0; i < searchLength; i++) {
-        var next = searching[Math.floor(Math.seedrandom(seed) * searching.length)];
+        Math.seedrandom(seed);
+        var next = searching[Math.floor(Math.random() * searching.length)];
         var advancement = advancements[next];
         var requirements = advancement.requirements;
 
@@ -52,7 +52,8 @@ function getList(seed) {
 
     for (var i = 0; i < length; i++) {
         //console.log(i);
-        var advancement = getAdvancement(achieved, available);
+        Math.seedrandom(seed);
+        var advancement = getAdvancement(achieved, available, seed);
         achieved.push(advancement[1]);
         list.push(advancement[0]);
     }

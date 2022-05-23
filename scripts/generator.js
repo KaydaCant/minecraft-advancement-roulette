@@ -42,7 +42,9 @@ function getAdvancement(achieved, available, seed) {
 
 function getList(seed) {
 
-    if (seed == undefined) seed = Math.random().toString(36).substring(2, 15) + Math.random().toString(36).substring(2, 15);
+    Math.seedrandom();
+    console.log(seed)
+    if (seed == "") seed = Math.random().toString(36).substring(2, 15) + Math.random().toString(36).substring(2, 15);
     else seed = seed.toString(); 
 
     var achieved = [];

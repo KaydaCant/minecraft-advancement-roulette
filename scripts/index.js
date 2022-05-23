@@ -19,7 +19,7 @@ function next() {
     if (finished) return;
     if (current >= advancementData.list.length) return win();
     $(".current").removeClass("current");
-    $(".advancements").append(`<li class="current"><p class="name">${advancementData.list[current].name}</p></li>`);
+    $(".advancements").append(`<li class="current"><p class="name"><strong>${current + 1}.</strong> ${advancementData.list[current].name}</p></li>`);
 
     $(".current").append($(".next"))
     $(".current").append($(".quit"))
@@ -33,7 +33,7 @@ function giveUp() {
     quit = true;
     $(".current").addClass("gaveup");
     for (i = 0; i < advancementData.list.length - current; i++) {
-        $(".advancements").append(`<li class="future"><p class="name">${advancementData.list[current + i].name}</p></li>`);
+        $(".advancements").append(`<li class="future"><p class="name"><strong>${current + i + 1}.</strong> ${advancementData.list[current + i].name}</p></li>`);
     }
 }
 

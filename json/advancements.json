@@ -142,7 +142,7 @@
     },
     "all_potions": {
         "name": "A Furious Cocktail",
-        "requirements": [ "brew_potion" ]
+        "requirements": [ "brew_potion", "obtain_blaze_rod" ]
     },
     "create_full_beacon": {
         "name": "Beaconator",

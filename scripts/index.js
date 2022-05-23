@@ -39,6 +39,7 @@ function giveUp() {
 
 function generate() {
     quit = false;
+    finished = false;
     $(".advancements").empty();
 
     advancementData = getList($(".generatorSeed").val());

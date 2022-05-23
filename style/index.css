@@ -11,6 +11,26 @@ body, html {
     font-family: 'Inter', sans-serif;
 }
 
+noscript {
+    position: absolute;
+    display: flexbox;
+
+    vertical-align: middle;
+    text-align: center;
+
+    /*width: 50%;
+    height: 50%;*/
+
+    border: 5px solid #FF4343;
+    color: #FF4343;
+    font-size: 5vw;
+
+    top: 50%;
+    left: 50%;
+    -moz-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+}
+
 ::-webkit-scrollbar {
     display: none;
 }
@@ -148,20 +168,16 @@ li .name {
 }
 
 .won {
-    background-color: #43FF8E;
-}
-
-.won .name {
-    color: 181818;
+    background-color: #4AB976;
 }
 
 .won .next {
-    background-color: #40BD72;
+    background-color: #3B8A5B;
     cursor: default;
 }
 
 .won .quit {
-    background-color: #40BD72;
+    background-color: #3B8A5B;
     cursor: default;
 }
 

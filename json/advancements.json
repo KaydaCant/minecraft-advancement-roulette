@@ -41,7 +41,7 @@
     },
     "shiny_gear": {
         "name": "Cover Me with Diamonds",
-        "requirements": []
+        "requirements": [ "mine_diamond" ]
     },
     "enchant_item": {
         "name": "Enchanter",
@@ -333,7 +333,7 @@
     },
     "bred_all_animals": {
         "name": "Two by Two",
-        "requirements": [ "breed_an_animal" ]
+        "requirements": [ "breed_an_animal", "enter_the_nether" ]
     },
     "complete_catalogue": {
         "name": "A Complete Catalogue",

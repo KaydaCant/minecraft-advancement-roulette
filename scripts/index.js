@@ -1,0 +1,58 @@
+$(".generated").hide();
+$(".advancements").hide();
+
+var advancementData;
+var current = 0;
+var quit = false;
+
+
+
+
+
+function next() {
+    if (quit) return;
+    $(".current").removeClass("current");
+    $(".advancements").append(`<li class="current"><p class="name">${advancementData.list[current].name}</p></li>`);
+
+    $(".current").append($(".next"))
+    $(".current").append($(".quit"))
+
+    current++;
+}
+
+function giveUp() {
+    if (quit) return;
+    quit = true;
+    $(".current").addClass("gaveup");
+    for (i = 0; i < advancementData.list.length - current; i++) {
+        $(".advancements").append(`<li class="future"><p class="name">${advancementData.list[current + i].name}</p></li>`);
+    }
+}
+
+function generate() {
+    quit = false;
+    $(".advancements").empty();
+
+    advancementData = getList($(".seed").val());
+    current = 0;
+
+    $(".advancements").append(`<button onclick="next()" class="next">Next</button>`);
+    $(".advancements").append(`<button onclick="giveUp()" class="quit">Quit</button>`);
+
+    $(".generated").show();
+    $(".advancements").show();
+    $(".list").html("");
+    next();
+}
+
+
+
+
+$(".generator").submit(function(event) {
+    event.preventDefault();
+    generate();
+});
+
+//$(".next").click(function() { next() });
+
+//$(".quit").click(function() { giveUp() });

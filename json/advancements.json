@@ -70,7 +70,7 @@
     },
     "obtain_ancient_debris": {
         "name": "Hidden in the Depths",
-        "requirements": [ "enter_the_nether", "mine_diamond" ]
+        "requirements": [ "enter_the_nether", [ "mine_diamond", "trade" ] ]
     },
     "fast_travel": {
         "name": "Subspace Bubble",
@@ -106,7 +106,7 @@
     },
     "netherite_armor": {
         "name": "Cover Me in Debris",
-        "requirements": [ "find_bastion" ]
+        "requirements": [ [ "obtain_ancient_debris", "find_bastion" ] ]
     },
     "get_wither_skull": {
         "name": "Spooky Scary Skeleton",
@@ -134,7 +134,7 @@
     },
     "brew_potion": {
         "name": "Local Brewery",
-        "requirements": [ [ "trade", "enter_the_nether" ] ]
+        "requirements": []
     },
     "create_beacon": {
         "name": "Bring Home the Beacon",

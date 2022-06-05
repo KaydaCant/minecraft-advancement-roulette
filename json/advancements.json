@@ -102,7 +102,7 @@
     },
     "use_lodestone": {
         "name": "Country Lode, Take Me Home",
-        "requirements": [ "enter_the_nether" ]
+        "requirements": [ [ "obtain_ancient_debris", "find_bastion" ] ]
     },
     "netherite_armor": {
         "name": "Cover Me in Debris",

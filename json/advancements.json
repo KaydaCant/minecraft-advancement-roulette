@@ -153,9 +153,13 @@
         "requirements": [ "all_potions", "kill_dragon", "create_beacon" ]
     },
 
+    "the_end": {
+        "name": "The End?",
+        "requirements": [ "follow_ender_eye" ]
+    },
     "kill_dragon": {
         "name": "Free the End",
-        "requirements": [ "follow_ender_eye" ]
+        "requirements": [ "the_end" ]
     },
     "dragon_egg": {
         "name": "The Next Generation",
@@ -163,7 +167,7 @@
     },
     "enter_end_gateway": {
         "name": "Remote Getaway",
-        "requirements": [ "follow_ender_eye" ]
+        "requirements": [ "the_end" ]
     },
     "respawn_dragon": {
         "name": "The End... Again...",
@@ -171,19 +175,19 @@
     },
     "dragon_breath": {
         "name": "You Need a Mint",
-        "requirements": [ "follow_ender_eye" ]
+        "requirements": [ "the_end" ]
     },
     "find_end_city": {
         "name": "The City at the End of the Game",
-        "requirements": [ "follow_ender_eye" ]
+        "requirements": [ "the_end" ]
     },
     "elytra": {
         "name": "Sky's the Limit",
-        "requirements": [ "follow_ender_eye" ]
+        "requirements": [ "find_end_city" ]
     },
     "levitate": {
         "name": "Great View From Up Here",
-        "requirements": [ "follow_ender_eye" ]
+        "requirements": [ "the_end" ]
     },
 
     "voluntary_exile":{
@@ -268,7 +272,7 @@
     },
     "adventuring_time": {
         "name": "Adventuring Time",
-        "requirements": [ "follow_ender_eye", "explore_nether" ]
+        "requirements": [ "the_end", "explore_nether" ]
     },
     "play_jukebox_in_meadows": {
         "name": "Sound of Music",
@@ -280,7 +284,7 @@
     },
     "spyglass_at_dragon": {
         "name": "Is It a Plane?",
-        "requirements": [ "follow_ender_eye", [ "iron_tools", "upgrade_tools" ] ]
+        "requirements": [ "the_end", [ "iron_tools", "upgrade_tools" ] ]
     },
     "very_very_frightening": {
         "name": "Very Very Frightening",
@@ -345,7 +349,7 @@
     },
     "balanced_diet": {
         "name": "A Balanced Diet",
-        "requirements": [ "follow_ender_eye" ]
+        "requirements": [ "the_end" ]
     },
     "obtain_netherite_hoe": {
         "name": "Serious Dedication",

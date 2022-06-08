@@ -333,7 +333,7 @@
     },
     "wax_on": {
         "name": "Wax On",
-        "requirements": []
+        "requirements": [ [ "iron_tools", "upgrade_tools" ] ]
     },
     "bred_all_animals": {
         "name": "Two by Two",

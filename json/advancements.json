@@ -175,7 +175,7 @@
     },
     "dragon_breath": {
         "name": "You Need a Mint",
-        "requirements": [ "the_end" ]
+        "requirements": [ "respawn_dragon" ]
     },
     "find_end_city": {
         "name": "The City at the End of the Game",

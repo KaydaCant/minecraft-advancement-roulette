@@ -106,7 +106,7 @@
     },
     "netherite_armor": {
         "name": "Cover Me in Debris",
-        "requirements": [ [ "obtain_ancient_debris", "find_bastion" ] ]
+        "requirements": [ "shiny_gear", [ "obtain_ancient_debris", "find_bastion" ] ]
     },
     "get_wither_skull": {
         "name": "Spooky Scary Skeleton",

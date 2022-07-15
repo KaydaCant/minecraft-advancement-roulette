@@ -366,31 +366,31 @@
     "kill_axolotl_target": {
         "name": "The Healing Power of Friendship!",
         "requirements": [ "axolotl_in_a_bucket" ]
-    }
+    },
     "froglights": {
         "name": "With Our Powers Combined!",
         "requirements": ["enter_the_nether"]
-    }
+    },
     "leash_all_frog_variants": {
         "name": "When the Squad Hops into Town",
         "requirements": []
-    }
+    },
     "allay_deliver_cake_to_note_block": {
         "name": "Birthday Song",
         "requirements": ["mine_diamond"]
-    }
+    },
     "tadpole_in_a_bucket": {
         "name": "Bukkit Bukkit",
         "requirements": []
-    }
+    },
     "allay_deliver_item_to_player": {
         "name": "You've Got a Friend in Me",
         "requirements": []
-    }
+    },
     "kill_mob_near_sculk_catalyst": {
         "name": "It Spreads",
         "requirements": []
-    }
+    },
     "avoid_vibration": {
         "name": "Sneak 100",
         "requirements": []

@@ -244,7 +244,7 @@
     },
     "kill_all_mobs": {
         "name": "Monsters Hunted",
-        "requirements": [ "kill_dragon", "summon_wither", "hero_of_the_village" ]
+        "requirements": [ "kill_dragon", "summon_wither", "voluntary_exile" ]
     },
     "totem_of_undying": {
         "name": "Postmortal",

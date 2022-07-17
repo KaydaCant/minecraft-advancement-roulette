@@ -1,5 +1,4 @@
 {
-    "mine_stone": {
         "name": "Stone Age",
         "requirements": []
     },
@@ -216,7 +215,7 @@
     },
     "lightning_rod_with_villager_no_fire": {
         "name": "Surge Protector",
-        "requirements": [ "throw_trident" ]
+        "requirements": []
     },
     "fall_from_world_height": {
         "name": "Caves & Cliffs",

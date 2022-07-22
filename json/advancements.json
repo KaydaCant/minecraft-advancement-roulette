@@ -373,7 +373,7 @@
     },
     "leash_all_frog_variants": {
         "name": "When the Squad Hops into Town",
-        "requirements": []
+        "requirements": [ "tadpole_in_a_bucket" ]
     },
     "allay_deliver_cake_to_note_block": {
         "name": "Birthday Song",

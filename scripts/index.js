@@ -27,7 +27,7 @@ $(document).ready(function() {
         console.log(linkData.advancement);
         generate();
         if (linkData.advancement) {
-            for (i = 0; i < linkData.advancement - 1; i++) {
+            for (i = 0; i < linkData.advancement; i++) {
                 next();
             }
         }
@@ -92,7 +92,7 @@ $(".getLink").click(function() {
     var linkElement = $(".link").get()[0];
     link = link.split("?")[0];
     link += "?seed=" + $(".generatorSeed").val();
-    link += "&advancement=" + current;
+    link += "&advancement=" + (current - 1);
     // put text in .link and copy to clipboard
     linkElement.text = link;
     linkElement.select();

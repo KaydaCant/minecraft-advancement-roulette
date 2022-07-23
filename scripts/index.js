@@ -27,7 +27,7 @@ $(document).ready(function() {
         console.log(linkData.advancement);
         generate();
         if (linkData.advancement) {
-            for (i = 0; i < linkData.advancement; i++) {
+            for (i = 0; i < linkData.advancement - 1; i++) {
                 next();
             }
         }

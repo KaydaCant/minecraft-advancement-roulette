@@ -71,11 +71,48 @@ noscript {
     color: #3d3d3d;
 }
 
+.link {
+    border: none;
+    border-radius: 10px;
+    position: absolute;
+    margin: 0;
+    top: calc(100% - 150px);
+    left: 15px;
+    width: 400px;
+    height: 40px;
+    text-align: center;
+    font-size: 25px;
+    color: #d6d6d6;
+    background-color: #2D2D2D;
+}
+
 .generatorButton {
     position: absolute;
     margin: 0;
     top: 50%;
     left: 440px;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+
+    width: 200px;
+    height: 40px;
+    background-color: #E4E4E4;
+    outline: none;
+    border: none;
+    color: #353535;
+
+    border-radius: 9px;
+    text-align: center;
+    font-size: 25px;
+
+    cursor: pointer;
+}
+
+.getLink {
+    position: absolute;
+    margin: 0;
+    top: 50%;
+    left: 665px;
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
 
@@ -185,10 +222,10 @@ li .name {
     height: 300px;
 }
 
-@media (max-width: 660px) {
+@media (max-width: 885px) {
     .generator {
-        height: 120px;
-        top: calc(100% - 120px);
+        height: 190px;
+        top: calc(100% - 190px);
     }
 
     .generatorSeed {
@@ -196,7 +233,13 @@ li .name {
         width: calc(100% - 30px);
         left: 15px;
 
-        top: calc(50% - 25px);
+        top: 35px;
+    }
+
+    .link {
+        width: calc(100% - 30px);
+        left: 15px;
+        top: calc(100% - 250px);
     }
 
     .generatorButton {
@@ -204,7 +247,15 @@ li .name {
         width: calc(100% - 30px);
         left: 15px;
 
-        top: calc(50% + 25px);
+        top: 90px;
+    }
+
+    .getLink {
+        position: absolute;
+        width: calc(100% - 30px);
+        left: 15px;
+
+        top: 150px;
     }
 
     .current button {

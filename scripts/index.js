@@ -6,7 +6,34 @@ var current = 0;
 var quit = false;
 var finished = false;
 
+var linkData = { 
+    seed: null,
+    advancement: null
+}
 
+$(document).ready(function() {
+
+    const queryString = window.location.search;
+    const urlParams = new URLSearchParams(queryString);
+
+    const seed = urlParams.get('seed');
+    if (seed) { linkData.seed = seed; }
+
+    const advancement = urlParams.get('advancement');
+    if (advancement) { linkData.advancement = advancement; }
+
+    if (linkData.seed) { 
+        $(".generatorSeed").val(linkData.seed);
+        console.log(linkData.advancement);
+        generate();
+        if (linkData.advancement) {
+            for (i = 0; i < linkData.advancement; i++) {
+                next();
+            }
+        }
+    }
+
+});
 
 
 function win() {
@@ -55,11 +82,24 @@ function generate() {
 }
 
 
-
-
 $(".generator").submit(function(event) {
     event.preventDefault();
     generate();
+});
+
+$(".getLink").click(function() {
+    var link = window.location.href;
+    var linkElement = $(".link").get()[0];
+    link = link.split("?")[0];
+    link += "?seed=" + $(".generatorSeed").val();
+    link += "&advancement=" + current;
+    // put text in .link and copy to clipboard
+    linkElement.text = link;
+    linkElement.select();
+    linkElement.setSelectionRange(0, 99999);
+    navigator.clipboard.writeText(link);
+    alert("Copied to clipboard!");
+    
 });
 
 //$(".next").click(function() { next() });

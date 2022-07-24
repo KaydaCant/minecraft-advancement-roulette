@@ -53,7 +53,7 @@ function next() {
     $(".current").append($(".next"))
     $(".current").append($(".quit"))
     document.cookie.seed = `seed=${$(".generatorSeed").val()} path=/`;
-    document.cookie.current = `current=${current} path=/`;
+    document.cookie.current = `current=${current -1} path=/`;
     current++;
 }
 

@@ -18,11 +18,11 @@ $(document).ready(function() {
 
     const seed = urlParams.get('seed');
     if (seed) { linkData.seed = seed; }
-    else {linkData.seed = document.cookie.seed}
+    else {linkData.seed = Cookies.get('seed')}
 
     const advancement = urlParams.get('advancement');
     if (advancement) { linkData.advancement = advancement; }
-    else {linkData.advancement = document.cookie.current}
+    else {linkData.advancement = Cookies.get('current')}
 
     if (linkData.seed) { 
         $(".generatorSeed").val(linkData.seed);
@@ -52,8 +52,8 @@ function next() {
 
     $(".current").append($(".next"))
     $(".current").append($(".quit"))
-    document.cookie.seed = `seed=${$(".generatorSeed").val()} path=/`;
-    document.cookie.current = `current=${current -1} path=/`;
+    Cookies.set(`seed`, `${$('.generatorSeed').val()}`, { expires: 1 });
+    Cookies.set(`current`, `${current -1}`, { expires: 1 });
     current++;
 }
 

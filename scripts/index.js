@@ -11,32 +11,33 @@ var linkData = {
     advancement: null
 }
 
-$(document).ready(function() {
+setTimeout(() => {
+    $(document).ready(function() {
 
-    const queryString = window.location.search;
-    const urlParams = new URLSearchParams(queryString);
+        const queryString = window.location.search;
+        const urlParams = new URLSearchParams(queryString);
 
-    const seed = urlParams.get('seed');
-    if (seed) { linkData.seed = seed; }
-    else {linkData.seed = Cookies.get('seed')}
+        const seed = urlParams.get('seed');
+        if (seed) { linkData.seed = seed; }
+        else {linkData.seed = Cookies.get('seed')}
 
-    const advancement = urlParams.get('advancement');
-    if (advancement) { linkData.advancement = advancement; }
-    else {linkData.advancement = Cookies.get('current')}
+        const advancement = urlParams.get('advancement');
+        if (advancement) { linkData.advancement = advancement; }
+        else {linkData.advancement = Cookies.get('current')}
 
-    if (linkData.seed) { 
-        $(".generatorSeed").val(linkData.seed);
-        console.log(linkData.advancement);
-        generate();
-        if (linkData.advancement) {
-            for (i = 0; i < linkData.advancement; i++) {
-                next();
+        if (linkData.seed) { 
+            $(".generatorSeed").val(linkData.seed);
+            console.log(linkData.advancement);
+            generate();
+            if (linkData.advancement) {
+                for (i = 0; i < linkData.advancement; i++) {
+                    next();
+                }
             }
         }
-    }
 
-});
-
+    });
+}, 500);
 
 function win() {
     finished = true;

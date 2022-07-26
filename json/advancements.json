@@ -381,7 +381,7 @@
     },
     "tadpole_in_a_bucket": {
         "name": "Bukkit Bukkit",
-        "requirements": []
+        "requirements": [ "breed_an_animal" ]
     },
     "allay_deliver_item_to_player": {
         "name": "You've Got a Friend in Me",

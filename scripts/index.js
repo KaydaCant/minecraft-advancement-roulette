@@ -54,7 +54,7 @@ function next() {
     $(".current").append($(".next"))
     $(".current").append($(".quit"))
     Cookies.set(`seed`, `${$('.generatorSeed').val()}`, { expires: 1 });
-    Cookies.set(`current`, `${current -1}`, { expires: 1 });
+    Cookies.set(`current`, `${current}`, { expires: 1 });
     current++;
 }
 

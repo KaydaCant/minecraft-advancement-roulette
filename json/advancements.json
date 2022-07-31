@@ -187,7 +187,7 @@
     },
     "levitate": {
         "name": "Great View From Up Here",
-        "requirements": [ "the_end" ]
+        "requirements": [ "the_end", "find_end_city" ]
     },
 
     "voluntary_exile":{

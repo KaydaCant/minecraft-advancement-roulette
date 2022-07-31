@@ -153,10 +153,6 @@
         "requirements": [ "all_potions", "kill_dragon", "create_beacon" ]
     },
 
-    "the_end": {
-        "name": "The End?",
-        "requirements": [ "follow_ender_eye" ]
-    },
     "kill_dragon": {
         "name": "Free the End",
         "requirements": [ "the_end" ]
@@ -272,7 +268,7 @@
     },
     "adventuring_time": {
         "name": "Adventuring Time",
-        "requirements": [ "the_end", "explore_nether" ]
+        "requirements": []
     },
     "play_jukebox_in_meadows": {
         "name": "Sound of Music",

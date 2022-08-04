@@ -1,5 +1,5 @@
 var advancements;
-$.getJSON('./json/advancements.json', function(data) {
+$.getJSON('../json/advancements.json', function(data) {
     advancements = data;
 })
 

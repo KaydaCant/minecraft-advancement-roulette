@@ -1,5 +1,5 @@
 var advancements;
-$.getJSON('../json/advancements.json', function(data) {
+$.getJSON('./json/advancements.json', function(data) {
     advancements = data;
 })
 
@@ -11,6 +11,7 @@ function getAdvancement(achieved, available, seed) {
         Math.seedrandom(seed);
         var next = searching[Math.floor(Math.random() * searching.length)];
         var advancement = advancements[next];
+        console.log(next, searching)
         var requirements = advancement.requirements;
 
         searching.splice(searching.indexOf(next), 1);

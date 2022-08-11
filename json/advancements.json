@@ -155,7 +155,7 @@
 
     "kill_dragon": {
         "name": "Free the End",
-        "requirements": [ "the_end" ]
+        "requirements": [ "enter_the_end" ]
     },
     "dragon_egg": {
         "name": "The Next Generation",
@@ -163,7 +163,7 @@
     },
     "enter_end_gateway": {
         "name": "Remote Getaway",
-        "requirements": [ "the_end" ]
+        "requirements": [ "enter_the_end" ]
     },
     "respawn_dragon": {
         "name": "The End... Again...",
@@ -175,7 +175,7 @@
     },
     "find_end_city": {
         "name": "The City at the End of the Game",
-        "requirements": [ "the_end" ]
+        "requirements": [ "enter_the_end" ]
     },
     "elytra": {
         "name": "Sky's the Limit",
@@ -183,7 +183,7 @@
     },
     "levitate": {
         "name": "Great View From Up Here",
-        "requirements": [ "the_end", "find_end_city" ]
+        "requirements": [ "enter_the_end", "find_end_city" ]
     },
 
     "voluntary_exile":{
@@ -280,7 +280,7 @@
     },
     "spyglass_at_dragon": {
         "name": "Is It a Plane?",
-        "requirements": [ "the_end", [ "iron_tools", "upgrade_tools" ] ]
+        "requirements": [ "enter_the_end", [ "iron_tools", "upgrade_tools" ] ]
     },
     "very_very_frightening": {
         "name": "Very Very Frightening",
@@ -329,7 +329,7 @@
     },
     "wax_on": {
         "name": "Wax On",
-        "requirements": [ [ "iron_tools", "upgrade_tools" ] ]
+        "requirements": []
     },
     "bred_all_animals": {
         "name": "Two by Two",
@@ -345,7 +345,7 @@
     },
     "balanced_diet": {
         "name": "A Balanced Diet",
-        "requirements": [ "the_end" ]
+        "requirements": [ "enter_the_end" ]
     },
     "obtain_netherite_hoe": {
         "name": "Serious Dedication",

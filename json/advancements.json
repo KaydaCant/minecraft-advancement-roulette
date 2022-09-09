@@ -41,7 +41,7 @@
     },
     "shiny_gear": {
         "name": "Cover Me with Diamonds",
-        "requirements": [ "mine_diamond" ]
+        "requirements": [ [ "mine_diamond", "trade" ] ]
     },
     "enchant_item": {
         "name": "Enchanter",
@@ -62,7 +62,7 @@
 
     "return_to_sender": {
         "name": "Return to Sender",
-        "requirements": [ "enter_the_nether" ]
+        "requirements": [ "enter_the_nether", "kill_a_mob" ]
     },
     "find_bastion": {
         "name": "Those Were the Days",
@@ -110,11 +110,11 @@
     },
     "get_wither_skull": {
         "name": "Spooky Scary Skeleton",
-        "requirements": [ "find_fortress" ]
+        "requirements": [ "find_fortress", "kill_a_mob" ]
     },
     "obtain_blaze_rod": {
         "name": "Into Fire",
-        "requirements": [ "find_fortress" ]
+        "requirements": [ "find_fortress" "kill_a_mob" ]
     },
     "charge_respawn_anchor": {
         "name": "Not Quite \"Nine\" Lives",
@@ -122,7 +122,7 @@
     },
     "ride_strider_in_overworld_lava": {
         "name": "Feels Like Home",
-        "requirements": [ "ride_strider", "lava_bucket" ]
+        "requirements": [ "ride_strider" ]
     },
     "explore_nether": {
         "name": "Hot Tourist Destinations",
@@ -155,7 +155,7 @@
 
     "kill_dragon": {
         "name": "Free the End",
-        "requirements": [ "the_end" ]
+        "requirements": [ "enter_the_end" ]
     },
     "dragon_egg": {
         "name": "The Next Generation",
@@ -163,7 +163,7 @@
     },
     "enter_end_gateway": {
         "name": "Remote Getaway",
-        "requirements": [ "the_end" ]
+        "requirements": [ "enter_the_end" ]
     },
     "respawn_dragon": {
         "name": "The End... Again...",
@@ -171,11 +171,11 @@
     },
     "dragon_breath": {
         "name": "You Need a Mint",
-        "requirements": [ "respawn_dragon" ]
+        "requirements": [ "enter_the_end" ]
     },
     "find_end_city": {
         "name": "The City at the End of the Game",
-        "requirements": [ "the_end" ]
+        "requirements": [ "enter_the_end" ]
     },
     "elytra": {
         "name": "Sky's the Limit",
@@ -183,7 +183,7 @@
     },
     "levitate": {
         "name": "Great View From Up Here",
-        "requirements": [ "the_end", "find_end_city" ]
+        "requirements": [ "find_end_city" ]
     },
 
     "voluntary_exile":{
@@ -192,7 +192,7 @@
     },
     "spyglass_at_parrot": {
         "name": "Is It a Bird?",
-        "requirements": [ [ "iron_tools", "upgrade_tools" ] ]
+        "requirements": []
     },
     "kill_a_mob": {
         "name": "Monster Hunter",
@@ -228,7 +228,7 @@
     },
     "spyglass_at_ghast": {
         "name": "Is It a Balloon?",
-        "requirements": [ "enter_the_nether", [ "iron_tools", "upgrade_tools" ] ]
+        "requirements": [ "enter_the_nether" ]
     },
     "throw_trident": {
         "name": "A Throwaway Joke",
@@ -280,7 +280,7 @@
     },
     "spyglass_at_dragon": {
         "name": "Is It a Plane?",
-        "requirements": [ "the_end", [ "iron_tools", "upgrade_tools" ] ]
+        "requirements": [ "enter_the_end" ]
     },
     "very_very_frightening": {
         "name": "Very Very Frightening",
@@ -329,7 +329,7 @@
     },
     "wax_on": {
         "name": "Wax On",
-        "requirements": [ [ "iron_tools", "upgrade_tools" ] ]
+        "requirements": []
     },
     "bred_all_animals": {
         "name": "Two by Two",
@@ -345,7 +345,7 @@
     },
     "balanced_diet": {
         "name": "A Balanced Diet",
-        "requirements": [ "the_end" ]
+        "requirements": [ "enter_the_end" ]
     },
     "obtain_netherite_hoe": {
         "name": "Serious Dedication",
@@ -357,7 +357,7 @@
     },
     "axolotl_in_a_bucket": {
         "name": "The Cutest Predator",
-        "requirements": [ "tactical_fishing" ]
+        "requirements": []
     },
     "kill_axolotl_target": {
         "name": "The Healing Power of Friendship!",
@@ -365,7 +365,7 @@
     },
     "froglights": {
         "name": "With Our Powers Combined!",
-        "requirements": ["enter_the_nether"]
+        "requirements": ["enter_the_nether", "tadpole_in_a_bucket"]
     },
     "leash_all_frog_variants": {
         "name": "When the Squad Hops into Town",
@@ -373,7 +373,7 @@
     },
     "allay_deliver_cake_to_note_block": {
         "name": "Birthday Song",
-        "requirements": ["mine_diamond"]
+        "requirements": []
     },
     "tadpole_in_a_bucket": {
         "name": "Bukkit Bukkit",

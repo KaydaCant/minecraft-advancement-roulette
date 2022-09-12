@@ -138,5 +138,5 @@ function victory() {
 }
 
 function retry() {
-    window.location = "/roulette.html?seed=";
+    window.location = "/minecraft-advancement-roulette/roulette.html?seed=";
 }

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
+    <title>Minecraft Advancement Roulette</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;450;900&display=swap" rel="stylesheet"> 
+
+    <script src="modules/seedrandom.min.js"></script>
+    <script defer src="modules/js.cookie.min.js"></script>
+
+    <link rel="stylesheet" href="global.css">
+    <link rel="stylesheet" href="roulette/style.css">
+    <script src="roulette/generator.js"></script>
+    <script src="roulette/advancements.js"></script>
+    <script defer src="roulette/script.js"></script>
+
+</head>
+<body>
+
+    <div class="title-holder">
+        <h1 class="title">Minecraft Advancement Roulette</h1>
+        <span class="version">v2.0.0</span>
+    </div>
+
+    <div class="advancement-holder">
+        <div class="buttons">
+            <button class="quit" onclick="quit()">Quit</button>
+            <button class="next" onclick="next()">Next</buttin>
+        </div>
+    </div>
+
+    <div class="retry">
+        <h1 class="message">Don't like this run?</h1>
+        <button onclick="retry()">Retry</button>
+    </div>
+
+</body>
+</html>

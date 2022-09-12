@@ -1,0 +1,84 @@
+.container {
+    position: absolute;
+    width: calc(100vw - 200px);
+    max-width: 1200px;
+    min-width: 350px;
+    text-align: center;
+
+    top: 50%; left: 50%;
+    translate: -50% -50%;
+}
+
+.container form {
+    position: relative;
+}
+
+.container .title {
+    margin-bottom: 30px;
+    font-size: 40px;
+}
+
+.container input {
+    outline: none;
+    box-shadow: 0 0 0 4px var(--text-primary);
+    border-radius: 15px;
+}
+
+.container input#seed:focus {
+    box-shadow: 0 0 0 4px var(--selection);
+}
+
+.container input#submit:focus, .container input#submit:hover {
+    box-shadow: 0 0 0 4px var(--background-color);
+    color: var(--background-color);
+    background-color: var(--text-primary);
+}
+
+.container input#seed {
+    position: relative;
+    box-sizing: border-box;
+    height: 130px;
+    width: 100%;
+    border: none;
+    text-align: center;
+
+    background-color: var(--highlight-primary);
+    color: var(--text-primary);
+    font-size: 40px;
+
+    padding: 30px;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+.container input#seed ::placeholder {
+    color: var(--text-secondary);
+}
+
+.container input#submit {
+    position: absolute;
+    height: 50px;
+    width: 220px;
+    left: calc(50% - 100px);
+    top: calc(100% - 30px);
+    background-color: var(--background-color);
+    color: var(--text-primary);
+    border: none;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.footer {
+    box-sizing: border-box;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    width: 100vw;
+    bottom: 0;
+    padding: 15px;
+}
+
+a:focus {
+    outline: none;
+    color: var(--selection);
+}

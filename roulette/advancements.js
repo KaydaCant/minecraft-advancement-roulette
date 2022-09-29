@@ -264,7 +264,7 @@ const advancements = {
     },
     "arbalistic": {
         "name": "Arbalistic",
-        "requirements": [ "ol_betsy" ]
+        "requirements": [ "ol_betsy", "shoot_arrow" ]
     },
     "adventuring_time": {
         "name": "Adventuring Time",

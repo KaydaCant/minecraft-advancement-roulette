@@ -373,7 +373,7 @@ const advancements = {
     },
     "allay_deliver_cake_to_note_block": {
         "name": "Birthday Song",
-        "requirements": []
+        "requirements": [ "allay_deliver_item_to_player" ]
     },
     "tadpole_in_a_bucket": {
         "name": "Bukkit Bukkit",

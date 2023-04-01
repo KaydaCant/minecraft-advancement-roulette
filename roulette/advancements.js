@@ -321,7 +321,7 @@ const advancements = {
     },
     "silk_touch_nest": {
         "name": "Total Beelocation",
-        "requirements": []
+        "requirements": [ ["fishy_business", "trade", "enchant_item", "follow_ender_eye" ] ]
     },
     "plant_seed": {
         "name": "A Seedy Place",

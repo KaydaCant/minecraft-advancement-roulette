@@ -411,7 +411,7 @@ const advancements = {
     },
     "trim_with_any_armor_pattern": {
         "name": "Crafting a New Look",
-        "requierments": []
+        "requirements": []
     },
     "trim_with_all_exclusive_armor_patterns": {
         "name": "Smithing with Style",

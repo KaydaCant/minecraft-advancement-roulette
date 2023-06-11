@@ -390,5 +390,39 @@ const advancements = {
     "avoid_vibration": {
         "name": "Sneak 100",
         "requirements": []
+    },
+    
+    //1.20 advancements
+    "salvage_sherd": {
+        "name": "Respecting the Remnants",
+        "requirements": []
+    },
+    "obtain_sniffer_egg": {
+        "name": "Smells Interesting",
+        "requirements": []
+    },
+    "feed_snifflet": {
+        "name": "Little Sniffs",
+        "requirements": [ "obtain_sniffer_egg" ]
+    },
+    "plant_any_sniffer_seed": {
+        "name": "Planting the Past",
+        "requirements": [ "obtain_sniffer_egg", "plant_seed" ]
+    },
+    "trim_with_any_armor_pattern": {
+        "name": "Crafting a New Look",
+        "requierments": []
+    },
+    "trim_with_all_exclusive_armor_patterns": {
+        "name": "Smithing with Style",
+        "requirements": [ "find_end_city", "find_fortress", "find_bastion", "kill_a_mob" ]
+    },
+    "craft_decorated_pot_using_only_sherds": {
+        "name": "Careful restoration",
+        "requirements": [ "salvage_sherd" ]
+    },
+    "read_power_of_chiseled_bookshelf": {
+        "name": "The Power of Books",
+        "requirements": [ "enter_the_nether" ]
     }
 }

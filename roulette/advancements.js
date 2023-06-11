@@ -280,7 +280,7 @@ const advancements = {
     },
     "spyglass_at_dragon": {
         "name": "Is It a Plane?",
-        "requirements": [ "enter_the_end" ]
+        "requirements": [ "enter_the_end", "respawn_dragon" ]
     },
     "very_very_frightening": {
         "name": "Very Very Frightening",

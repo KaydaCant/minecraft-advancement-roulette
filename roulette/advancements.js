@@ -74,7 +74,7 @@ const advancements = {
     },
     "fast_travel": {
         "name": "Subspace Bubble",
-        "requirements": [ "enter_the_nether" ]
+        "requirements": [ "enter_the_nether", "form_obsidian" ]
     },
     "find_fortress": {
         "name": "A Terrible Fortress",

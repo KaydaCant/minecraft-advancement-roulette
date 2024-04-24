@@ -424,5 +424,23 @@ const advancements = {
     "read_power_of_chiseled_bookshelf": {
         "name": "The Power of Books",
         "requirements": [ "enter_the_nether" ]
+    },
+
+    //1.20.5 advancements
+    "brush_armadillo": {
+        "name": "Isn't It Scute?",
+        "requirements": []
+    },
+    "remove_wolf_armor": {
+        "name": "Shear Brilliance",
+        "requirements": [ "tame_an_animal", "brush_armadillo" ]
+    },
+    "repair_wolf_armor": {
+        "name": "Good as New",
+        "requirements": [ "tame_an_animal", "brush_armadillo" ]
+    },
+    "whole_pack": {
+        "name": "The Whole Pack",
+        "requirements": [ "tame_an_animal" ]
     }
 }

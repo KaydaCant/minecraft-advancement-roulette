@@ -27,10 +27,11 @@ function getAdvancement(completedList, availableList) {
         let randomValue = Math.floor(Math.random() * unchecked.length);
         let check = unchecked[randomValue];
         let checkObject = advancements[check];
-        if(checkObject.name == "You Need a Mint" && completedList.includes("kill_dragon")){
-            console.log("This Shit is Busted");
-        }
         let requirements = checkObject.requirements;
+        if(checkObject.name == "You Need a Mint" && completedList.includes("kill_dragon")){
+            console.log("Impossible!");
+            requirements = checkObject.alt;
+        }
         for (j = 0; j < requirements.length; j++) {
             let requirement = requirements[j];
             if (Array.isArray(requirement)) {

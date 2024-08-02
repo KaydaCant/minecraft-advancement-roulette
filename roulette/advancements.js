@@ -94,7 +94,7 @@ const advancements = {
     },
     "uneasy_alliance": {
         "name": "Uneasy Alliance",
-        "requirements": [ "enter_the_nether" ]
+        "requirements": [ "enter_the_nether", "kill_a_mob", "form_obsidian" ]
     },
     "loot_bastion": {
         "name": "War Pigs",

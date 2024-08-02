@@ -171,7 +171,8 @@ const advancements = {
     },
     "dragon_breath": {
         "name": "You Need a Mint",
-        "requirements": [ "enter_the_end" ]
+        "requirements": [ "enter_the_end" ],
+        "alt": [ "respawn_dragon" ]
     },
     "find_end_city": {
         "name": "The City at the End of the Game",

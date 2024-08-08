@@ -28,6 +28,10 @@ function getAdvancement(completedList, availableList) {
         let check = unchecked[randomValue];
         let checkObject = advancements[check];
         let requirements = checkObject.requirements;
+        if(checkObject.name == "You Need a Mint" && completedList.includes("kill_dragon")){
+            console.log("Impossible!");
+            requirements = checkObject.alt;
+        }
         for (j = 0; j < requirements.length; j++) {
             let requirement = requirements[j];
             if (Array.isArray(requirement)) {

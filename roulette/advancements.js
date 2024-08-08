@@ -94,7 +94,7 @@ const advancements = {
     },
     "uneasy_alliance": {
         "name": "Uneasy Alliance",
-        "requirements": [ "enter_the_nether" ]
+        "requirements": [ "enter_the_nether", "kill_a_mob", "form_obsidian" ]
     },
     "loot_bastion": {
         "name": "War Pigs",
@@ -142,7 +142,7 @@ const advancements = {
     },
     "all_potions": {
         "name": "A Furious Cocktail",
-        "requirements": [ "brew_potion", "obtain_blaze_rod" ]
+        "requirements": [ "brew_potion", "obtain_blaze_rod", "minecraft_trials_edition" ]
     },
     "create_full_beacon": {
         "name": "Beaconator",
@@ -150,7 +150,7 @@ const advancements = {
     },
     "all_effects": {
         "name": "How Did We Get Here?",
-        "requirements": [ "all_potions", "kill_dragon", "create_beacon" ]
+        "requirements": [ "all_potions", "kill_dragon", "create_beacon", "minecraft_trials_edition", "summon_wither", "hero_of_the_village" ]
     },
 
     "kill_dragon": {
@@ -171,7 +171,8 @@ const advancements = {
     },
     "dragon_breath": {
         "name": "You Need a Mint",
-        "requirements": [ "enter_the_end" ]
+        "requirements": [ "enter_the_end" ],
+        "alt": [ "respawn_dragon" ]
     },
     "find_end_city": {
         "name": "The City at the End of the Game",
@@ -224,7 +225,7 @@ const advancements = {
     },
     "hero_of_the_village": {
         "name": "Hero of the Village",
-        "requirements": [ "voluntary_exile" ]
+        "requirements": [ [ "voluntary_exile", "minecraft_trials_edition" ] ]
     },
     "spyglass_at_ghast": {
         "name": "Is It a Balloon?",
@@ -442,5 +443,39 @@ const advancements = {
     "whole_pack": {
         "name": "The Whole Pack",
         "requirements": [ "tame_an_animal" ]
+    },
+
+    //1.21
+    "minecraft_trials_edition": {
+        "name": "Minecraft: Trial(s) Edition",
+        "requirements": []
+    },
+    "crafters_crafting_crafters": {
+        "name": "Crafters Crafting Crafters",
+        "requirements": ["mine_stone"]
+    },
+    "lighten_up": {
+        "name": "Lighten Up",
+        "requirements": ["obtain_blaze_rod"]
+    },
+    "who_needs_rockets": {
+        "name": "Who Needs Rockets?",
+        "requirements": ["minecraft_trials_edition", ["kill_a_mob", "under_lock_and_key"] ]
+    },
+    "under_lock_and_key": {
+        "name": "Under Lock and Key",
+        "requirements": ["minecraft_trials_edition"]
+    },
+    "revaulting": {
+        "name": "Revaulting",
+        "requirements": ["minecraft_trials_edition"]
+    },
+    "blowback": {
+        "name": "Blowback",
+        "requirements": ["minecraft_trials_edition", "kill_a_mob"]
+    },
+    "overoverkill": {
+        "name": "Over-Overkill",
+        "requirements": ["minecraft_trials_edition", "revaulting"]
     }
 }

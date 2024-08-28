@@ -355,7 +355,7 @@ const advancements = {
     },
     "wax_off": {
         "name": "Wax Off",
-        "requirements": [ "wax_on" ]
+        "requirements": [ ["wax_on",  "minecraft_trials_edition"] ]
     },
     "axolotl_in_a_bucket": {
         "name": "The Cutest Predator",
